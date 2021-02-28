@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import Routing from "./routing";
 import Navigation from "./components/common/navigation";
@@ -18,7 +18,6 @@ let theme = createMuiTheme({
 theme = responsiveFontSizes(theme);
 
 const App = () => (
-
   <BrowserRouter>
     <MuiThemeProvider theme={theme}>
       <Navigation>

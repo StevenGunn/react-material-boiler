@@ -19,7 +19,7 @@
     "start": "react-scripts start",
     "format": "./node_modules/.bin/prettier --write src/**/*.{js,jsx,json,css}",
     "lint": "eslint src/**/*.js?(x)",
-    "lint-fix": "eslint --fix src/**/*.js?(x)",
+    "lint:fix": "eslint --fix src/**/*.js?(x)",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

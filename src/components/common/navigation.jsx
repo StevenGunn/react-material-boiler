@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "./appBar";
@@ -12,6 +12,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Paper from "@material-ui/core/Paper";
 import Home from "@material-ui/icons/HomeTwoTone";
 import Person from "@material-ui/icons/PersonOutlineTwoTone";
+import PropTypes from 'prop-types';
 
 const drawerWidth = 190;
 
@@ -39,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ClippedDrawer(props) {
+export default function Navigation(props) {
   const classes = useStyles();
 
   return (
@@ -78,3 +79,7 @@ export default function ClippedDrawer(props) {
     </div>
   );
 }
+
+Navigation.propTypes = {
+  children: PropTypes.node.isRequired
+};
