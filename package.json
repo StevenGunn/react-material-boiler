@@ -26,8 +26,8 @@
     "eject": "react-scripts eject"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-      "prettier --write"
+    "*.{js,jsx,json,css}": [
+        "prettier --write"
     ]
   },
   "eslintConfig": {
