@@ -1,7 +1,3 @@
-const Landing = () => (
-  <>
-    Hello
-  </>
-)
+const Landing = () => <>Hello</>;
 
 export default Landing;

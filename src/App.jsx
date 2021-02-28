@@ -1,28 +1,29 @@
-
-import { Route, Switch } from 'react-router-dom';
-import Navigation from './components/common/navigation';
-import LandingPage from './pages/landing';
-import PageOne from './pages/pageOne';
-import { createMuiTheme, MuiThemeProvider, responsiveFontSizes } from '@material-ui/core/styles';
+import { BrowserRouter } from "react-router-dom";
+import Routing from "./routing";
+import Navigation from "./components/common/navigation";
+import {
+  createMuiTheme,
+  MuiThemeProvider,
+  responsiveFontSizes,
+} from "@material-ui/core/styles";
 
 let theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#ffffff'
-    }
+      main: "#ffffff",
+    },
   },
 });
 theme = responsiveFontSizes(theme);
 
 const App = () => (
-  <MuiThemeProvider theme={theme}>
-    <Navigation>
-      <Switch>
-        <Route path='/one' component={PageOne} />
-        <Route path='/' component={LandingPage} />
-      </Switch>
-    </Navigation>
-  </MuiThemeProvider>
+  <BrowserRouter>
+    <MuiThemeProvider theme={theme}>
+      <Navigation>
+        <Routing />
+      </Navigation>
+    </MuiThemeProvider>
+  </BrowserRouter>
 );
 
 export default App;

@@ -1,7 +1,3 @@
-const One = () => (
-  <>
-    One
-  </>
-)
+const One = () => <>One</>;
 
 export default One;

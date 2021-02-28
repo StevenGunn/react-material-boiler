@@ -1,4 +1,4 @@
-import One from '../components/one';
+import One from "../components/one";
 
 const OnePage = () => (
   <>
