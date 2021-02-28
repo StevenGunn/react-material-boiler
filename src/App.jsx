@@ -17,6 +17,7 @@ let theme = createMuiTheme({
 theme = responsiveFontSizes(theme);
 
 const App = () => (
+  
   <BrowserRouter>
     <MuiThemeProvider theme={theme}>
       <Navigation>
