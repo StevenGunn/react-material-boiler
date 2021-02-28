@@ -3,6 +3,7 @@ import One from "../components/one";
 const OnePage = () => (
   <>
     <One />
+    
   </>
 );
 
